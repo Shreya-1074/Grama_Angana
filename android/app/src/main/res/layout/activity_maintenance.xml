@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#fefefe">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maintenance Fund"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Item 1: Fans -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#f0fdf4"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ceiling Fans Replacement"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvFanProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹300 / ₹500"
+            android:layout_marginTop="4dp"/>
+
+        <ProgressBar
+            android:id="@+id/pbFans"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="500"
+            android:progress="300"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnContributeFan"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Contribute ₹50"
+            android:textColor="#059669"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <!-- Item 2: Chairs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#fffbeb"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Plastic Chairs"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvChairProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹200 / ₹1000"
+            android:layout_marginTop="4dp"/>
+
+        <ProgressBar
+            android:id="@+id/pbChairs"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="1000"
+            android:progress="200"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnContributeChair"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Contribute ₹100"
+            android:textColor="#D97706"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+</LinearLayout>

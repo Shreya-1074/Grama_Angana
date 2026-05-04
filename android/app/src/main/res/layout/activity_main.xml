@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F8FAFC">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grama-Angana"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#059669"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Community Space Manager"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="24dp"/>
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#ECFDF5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hall Status"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:textColor="#64748B"/>
+
+            <TextView
+                android:id="@+id/tvHallStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#047857"/>
+
+            <TextView
+                android:id="@+id/tvTodayEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No events scheduled for today"
+                android:textSize="14sp"
+                android:textColor="#475569"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnViewCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="View Calendar"
+        android:backgroundTint="#2563EB"
+        android:layout_marginBottom="12dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnRequestBooking"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Request Booking"
+        android:backgroundTint="#059669"
+        android:layout_marginBottom="12dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnMaintenanceJar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Maintenance Jar"
+        android:backgroundTint="#D97706"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

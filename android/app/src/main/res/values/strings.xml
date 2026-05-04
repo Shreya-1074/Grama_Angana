@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Grama-Angana</string>
+    
+    <string-array name="purpose_options">
+        <item>Wedding</item>
+        <item>Sports Event</item>
+        <item>Community Meeting</item>
+        <item>Religious Ceremony</item>
+        <item>Private Function</item>
+    </string-array>
+</resources>
